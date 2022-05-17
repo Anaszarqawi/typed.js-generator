@@ -5,11 +5,13 @@ import { createRoot } from 'react-dom/client';
 import App from './components/App';
 
 // JS Files
-import './assets/js/script.js';
+import './assets/js/script';
+import './assets/js/cloneData';
 
 // SCSS Files
 import './assets/scss/vars.scss';
 import './assets/scss/root.scss';
+import './assets/scss/buttons.scss';
 
 const MainContent = () => {
   return <App />;
