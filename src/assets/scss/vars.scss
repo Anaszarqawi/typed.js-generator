@@ -4,14 +4,17 @@
     color: var(--text-color);
 }
 
-textarea,input{
+textarea,
+input[type="text"],
+input[type="number"]{
     outline: none;
     border: 0;
     border-radius: var(--border-radius);
     background-color: var(--sub-color);
     font-size: 22px;
     padding: 10px;
-    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 input::-webkit-outer-spin-button,
