@@ -1,21 +1,6 @@
 import Typed from 'typed.js';
 import $ from 'jquery';
 
-// const typedJs = {
-//     strings: string[],
-//     typeSpeed: number,
-//     backSpeed: number,
-//     backDelay: number,
-//     startDelay: number,
-//     fadeOut: boolean,
-//     cursorChar: string,
-//     showCursor: boolean,
-//     smartBackspace: boolean,
-//     loop: boolean,
-//     loopCount: number,
-//     shuffle: boolean,
-// }
-
 const options = {
   strings: [
     'These are the default values...',

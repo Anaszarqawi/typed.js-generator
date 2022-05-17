@@ -1,4 +1,4 @@
-*{
+* {
     font-family: "Consolas", "Courier New", "Courier";
     box-sizing: border-box;
     color: var(--text-color);
@@ -6,7 +6,7 @@
 
 textarea,
 input[type="text"],
-input[type="number"]{
+input[type="number"] {
     outline: none;
     border: 0;
     border-radius: var(--border-radius);
@@ -15,6 +15,7 @@ input[type="number"]{
     padding: 10px;
     min-width: 100%;
     max-width: 100%;
+    margin-top: 10px;
 }
 
 input::-webkit-outer-spin-button,
@@ -23,17 +24,48 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-body{
+body {
     padding: 0;
     margin: 0;
     background-color: var(--bg-color);
 }
 
+::-moz-selection {
+    /* Code for Firefox */
+    background: var(--light-sub-color);
+}
 
-:root{
-    --bg-color:#1a1e22;
+::selection {
+    background: var(--light-sub-color);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--sub-text-color);
+}
+
+:root {
+    --bg-color: #1a1e22;
     --text-color: #d8d2cc;
+    --sub-text-color: #d8d2cc36;
     --sub-color: #272d33;
+    --light-sub-color: #494e54;
     --border-radius: 3px;
-    --font-size-1: 30px; 
+    --font-size-1: 30px;
+    --font-size-2: 22px;
 }

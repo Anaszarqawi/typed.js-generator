@@ -9,7 +9,7 @@
         font-size: 30px;
     }
 
-    .optionsContainer {
+    .RightMenu {
         // padding: 20px;
         border-left: 1px solid var(--text-color);
         position: absolute;
@@ -26,7 +26,7 @@
                 display: flex;
                 flex-direction: column;
                 // align-items: center;
-                border-bottom: 1px solid var(--text-color);
+                border-bottom: 1px solid var(--sub-text-color);
                 padding: 20px;
                 user-select: none;
 
@@ -34,9 +34,6 @@
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-                    padding: 15px;
-                    padding-left: 0;
-                    // font-size: 22px;
 
                     label {
                         font-size: 22px;
