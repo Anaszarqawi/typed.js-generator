@@ -4,7 +4,9 @@ export default function () {
     <div className="controlSection">
       <div className="title">Controlling</div>
       <div className="buttons">
-        <button className="btn">Play</button>
+        <button id="play" className="btn">
+          Play
+        </button>
         <button className="btn">Stop</button>
       </div>
     </div>

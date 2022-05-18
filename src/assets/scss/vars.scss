@@ -41,12 +41,13 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
+    transition: all 0.2s;
     width: 2px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: var(--bg-color);
+    background: var(--sub-color);
 }
 
 /* Handle */
@@ -55,9 +56,9 @@ body {
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: var(--sub-text-color);
-}
+// ::-webkit-scrollbar-thumb:hover {
+//     background: var(--sub-text-color);
+// }
 
 :root {
     --bg-color: #1a1e22;

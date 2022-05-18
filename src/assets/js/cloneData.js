@@ -1,6 +1,16 @@
 import Typed from 'typed.js';
 // import $ from 'jquery';
-import $ from '../packages/jquery-3.6.0.slim.min';
+
+var arrOfChecked = [];
 
 let ElementsChecked = $(':checkbox');
 console.log(ElementsChecked);
+
+for (checkbox of ElementsChecked) {
+  console.log($(checkbox).is(':checked'));
+}
+
+// $('#play').on('click', function (e) {
+//   e.preventDefault();
+//   console.log('1');
+// });
