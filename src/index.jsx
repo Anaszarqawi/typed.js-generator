@@ -5,8 +5,7 @@ import { createRoot } from 'react-dom/client';
 import App from './components/App';
 
 // JS Files
-import './assets/js/script';
-import './assets/js/cloneData';
+import './assets/js/script.js';
 
 // SCSS Files
 import './assets/scss/vars.scss';

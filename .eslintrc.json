@@ -17,16 +17,16 @@
     "plugins": [
         "react"
     ],
-    "rules": {
-    },
+    "parser": "babel-eslint",
     "overrides": [
         {
             "files": [
-                "jquery-3.6.0.slim.min.js"
+                "**/*.js?(x)"
             ],
             "rules": {
-                "jest/expect-expect": "off",
-                "no-undef":"off"
+                "react/no-unescaped-entities": "off",
+                "react/display-name": "off",
+                "react/prop-types": "off"
             }
         }
     ]
