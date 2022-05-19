@@ -8,7 +8,10 @@ export default function (props) {
           {props.title}
         </label>
       </div>
-      <div className="content">{props.type}</div>
+      <div className="content">
+        <span className="unit">{props.unit}</span>
+        {props.type}
+      </div>
     </div>
   );
 }

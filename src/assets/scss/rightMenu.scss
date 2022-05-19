@@ -1,0 +1,23 @@
+.rightMenu {
+    // padding: 20px;
+    border-left: 1px solid var(--text-color);
+    flex: 1;
+    width: fit-content;
+    background-color: var(--bg-color);
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: row;
+
+    .leftSide {
+        border-right: 1px solid var(--text-color);
+        padding: 20px;
+        width: 100%;
+    }
+
+    .rightSide {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 500px;
+    }
+}
