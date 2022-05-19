@@ -1,13 +1,14 @@
-// eslint-disable-next-line import/no-anonymous-default-export
+import Btn from './btn';
 export default function () {
   return (
     <div className="controlSection">
       <div className="title">Controlling</div>
       <div className="buttons">
-        <button id="play" className="btn">
-          Play
-        </button>
-        <button className="btn">Stop</button>
+        <Btn name="Toggle" />
+        <Btn name="Start" />
+        <Btn name="Stop" />
+        <Btn name="Reset" />
+        <Btn name="Destroy" />
       </div>
     </div>
   );

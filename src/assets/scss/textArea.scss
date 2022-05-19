@@ -1,0 +1,12 @@
+.textArea {
+    padding: 30px;
+    color: var(--text-color);
+    display: flex;
+    font-size: 30px;
+    flex: 2;
+    position: relative;
+
+    .text {
+        transition: all 0.2s;
+    }
+}
