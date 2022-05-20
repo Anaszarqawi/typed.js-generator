@@ -8,7 +8,7 @@ export default function () {
         <a href="https://github.com/Anaszarqawi"> @anaszarqawi_</a>
       </p>
       <a
-        href="https://github.com/Anaszarqawi/College-GPA-Calculator"
+        href="https://github.com/Anaszarqawi/typed.js-generator"
         target="_blank"
         className="github"
         rel="noreferrer"
