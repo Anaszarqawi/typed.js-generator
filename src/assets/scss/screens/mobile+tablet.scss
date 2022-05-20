@@ -1,0 +1,44 @@
+@media only screen and(max-width: 768px) {
+    body {
+        // overflow: hidden;
+        overflow-y: scroll !important;
+    }
+
+    .navbar {
+        width: 100% !important;
+        font-size: var(--normal-font-size);
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .textArea {
+        min-height: 300px;
+        width: 100% !important;
+    }
+
+    .rightMenu {
+        position: static;
+        flex-wrap: wrap;
+        flex-direction: column-reverse !important;
+        border-top: 1px solid var(--text-color);
+        border-left: none !important;
+        width: 100%;
+    }
+
+    .leftSide {
+        border: none !important;
+    }
+
+    .rightSide {
+        border-bottom: 1px solid var(--text-color);
+        min-width: 0 !important;
+
+        .options {
+            overflow-y: auto;
+        }
+    }
+}

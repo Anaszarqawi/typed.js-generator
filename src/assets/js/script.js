@@ -9,11 +9,11 @@ const options = {
     'Have a great day!',
   ],
   // stringsElement: null,
-  typeSpeed: 20,
-  backSpeed: 50,
+  typeSpeed: 50,
+  backSpeed: 20,
   startDelay: 0,
   backDelay: 0,
-  fadeOut: true,
+  fadeOut: false,
   fadeOurClass: 'typed-fade-out',
   fadeOutDelay: 0,
   loop: false,
@@ -83,7 +83,7 @@ $(document).ready(function () {
   });
   $(document).on('focusout', 'input, textarea', function (e) {
     typed.destroy();
-    // cloneValues();
+    cloneValues();
     // typed.start();
     typed = new Typed('.text', options);
   });
@@ -92,7 +92,8 @@ $(document).ready(function () {
     typed.destroy();
     checkCheckbox();
     cloneValues();
-    console.log(options);
+    refreshCode();
+    // console.log(options);
     typed = new Typed('.text', options);
   });
 
@@ -114,15 +115,15 @@ const cloneValues = () => {
 
   if (checked.includes(true)) {
     // typed.destroy();
-    console.log(checked.includes(true));
+    // console.log(checked.includes(true));
     if (checked[0]) {
       var strings = $(Attributes[0]).find('textarea').val();
-      console.log(strings);
+      // console.log(strings);
       if (strings) {
         options.strings = strings.split('\n');
       } else {
         options.strings = defaultOptions.strings;
-        console.log(options.strings);
+        // console.log(options.strings);
       }
     } else {
       options.strings = defaultOptions.strings;
@@ -186,7 +187,7 @@ const checkCheckbox = () => {
   let Attributes = $('.attribute');
   for (const attr of Attributes) {
     const isChecked = $(attr).find('input[type="checkbox"]').is(':checked');
-    console.log(isChecked);
+    // console.log(isChecked);
     if (isChecked) {
       $(attr).find('input[type="number"], textarea').removeClass('unchecked');
     } else {
@@ -230,6 +231,7 @@ const formatCode = () => {
   document.querySelectorAll('pre[class*=language-]').forEach(function (node) {
     node.classList.add('line-numbers');
   });
+  // eslint-disable-next-line no-undef
   Prism.highlightAll();
 };
 

@@ -1,0 +1,22 @@
+.navbar {
+    width: calc(100% - 867px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 20px 40px;
+    font-size: var(--title-font-size);
+    font-weight: 700;
+    border-bottom: 1px solid var(--text-color);
+    background-color: var(--sub-color);
+    align-self: flex-end;
+
+    .github {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        img {
+            fill: var(--text-color);
+        }
+    }
+}

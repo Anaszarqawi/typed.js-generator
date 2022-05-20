@@ -30,6 +30,8 @@ input::-webkit-inner-spin-button {
 
 .title {
     font-size: var(--title-font-size);
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 body {
@@ -37,14 +39,13 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color: var(--bg-color);
-    // overflow-x: hidden;
-    // overflow: hidden;
+    overflow: hidden;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
 }
 
 ::-moz-selection {

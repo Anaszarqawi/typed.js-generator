@@ -7,6 +7,10 @@
     display: flex;
     // flex-wrap: wrap;
     flex-direction: row;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
 
     .leftSide {
         border-right: 1px solid var(--text-color);

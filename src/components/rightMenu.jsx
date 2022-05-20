@@ -2,6 +2,7 @@ import Attribute from './attribute';
 import Buttons from './buttons';
 import Code from './code';
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default function () {
   return (
     <div className="rightMenu">
@@ -12,6 +13,8 @@ export default function () {
       <div className="rightSide">
         <Buttons />
         <div className="options">
+          <div className="title">Settings</div>
+
           <Attribute
             title="Strings"
             type={
@@ -27,7 +30,7 @@ export default function () {
           <Attribute
             title="Type Speed"
             type={
-              <input type="number" className="input" placeholder="0"></input>
+              <input type="number" className="input" placeholder="50"></input>
             }
             id="2"
             unit="ms"
@@ -35,7 +38,7 @@ export default function () {
           <Attribute
             title="Back Speed"
             type={
-              <input type="number" className="input" placeholder="0"></input>
+              <input type="number" className="input" placeholder="20"></input>
             }
             id="3"
             unit="ms"

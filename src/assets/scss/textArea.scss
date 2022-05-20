@@ -2,9 +2,10 @@
     padding: 30px;
     color: var(--text-color);
     display: flex;
-    font-size: 30px;
+    font-size: var(--normal-font-size);
     flex: 2;
     position: relative;
+    width: calc(100% - 867px);
 
     .text {
         transition: all 0.2s;
