@@ -16,8 +16,9 @@ import './assets/scss/code.scss';
 import './assets/scss/options.scss';
 import './assets/scss/textArea.scss';
 import './assets/scss/vars.scss';
-import './assets/scss/screens/mobile+tablet.scss';
 import './assets/scss/screens/laptop.scss';
+import './assets/scss/screens/mobile+tablet.scss';
+import './assets/scss/footer.scss';
 
 import './assets/packages/prism/prism.css';
 

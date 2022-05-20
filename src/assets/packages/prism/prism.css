@@ -150,7 +150,8 @@ div.code-toolbar>.toolbar>.toolbar-item>button {
     padding: 0;
     -webkit-user-select: none;
     -moz-user-select: none;
-    -ms-user-select: none
+    -ms-user-select: none;
+    transition: all 0.2s;
 }
 
 div.code-toolbar>.toolbar>.toolbar-item>a,
@@ -166,7 +167,6 @@ div.code-toolbar>.toolbar>.toolbar-item>span {
 
 div.code-toolbar>.toolbar>.toolbar-item>a:hover,
 div.code-toolbar>.toolbar>.toolbar-item>button:hover,
-div.code-toolbar>.toolbar>.toolbar-item>span:hover,
 div.code-toolbar>.toolbar>.toolbar-item>button>span:hover {
     background-color: var(--text-color);
     color: var(--sub-color) !important;
