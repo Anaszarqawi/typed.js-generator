@@ -1,6 +1,7 @@
 import TextArea from './textArea';
 import Options from './rightMenu';
 import Navbar from './navbar';
+import Footer from './footer';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function () {
@@ -9,6 +10,7 @@ export default function () {
       <Navbar />
       <TextArea />
       <Options />
+      <Footer />
     </div>
   );
 }

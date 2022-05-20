@@ -22,4 +22,8 @@
         border-right: none !important;
         border-bottom: 1px solid var(--text-color);
     }
+
+    footer {
+        width: calc(100% - 503px) !important;
+    }
 }
