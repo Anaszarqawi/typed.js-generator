@@ -13,7 +13,7 @@ export default function () {
       <div className="rightSide">
         <Buttons />
         <div className="options">
-          <div className="title">Settings</div>
+          <div className="title">Configuration</div>
 
           <Attribute
             title="Strings"

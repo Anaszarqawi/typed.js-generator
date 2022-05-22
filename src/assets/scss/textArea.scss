@@ -1,13 +1,17 @@
 .textArea {
     padding: 30px;
     color: var(--text-color);
-    display: flex;
     font-size: var(--normal-font-size);
     flex: 2;
     position: relative;
     width: calc(100% - 867px);
 
     .text {
+        margin-top: 10px;
+        background-color: var(--sub-color);
+        padding: 20px;
+        border-radius: var(--border-radius);
         transition: all 0.2s;
+        min-height: 63px;
     }
 }

@@ -4,12 +4,13 @@
     flex-direction: row;
     align-items: center;
 
-    padding: 20px 40px;
+    padding: 20px 30px;
     font-size: var(--title-font-size);
     font-weight: 700;
     // border-bottom: 1px solid var(--text-color);
     background-color: var(--sub-color);
     align-self: flex-end;
+    user-select: none;
 
     .github {
         flex: 1;

@@ -6,6 +6,7 @@ pre[class*=language-] {
     background: 0 0;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     font-size: 1em;
+    /* padding-top: 30px; */
     text-align: left;
     white-space: pre;
     word-spacing: normal;
@@ -120,7 +121,7 @@ div.code-toolbar {
 div.code-toolbar>.toolbar {
     position: absolute;
     z-index: 10;
-    top: -2px;
+    top: 0;
     right: 0;
 }
 
@@ -148,9 +149,6 @@ div.code-toolbar>.toolbar>.toolbar-item>button {
     line-height: normal;
     overflow: visible;
     padding: 0;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     transition: all 0.2s;
 }
 
@@ -161,8 +159,12 @@ div.code-toolbar>.toolbar>.toolbar-item>span {
     border-radius: var(--border-radius);
     color: var(--text-color);
     padding: 4px 10px;
-    margin: 4px;
+    /* margin-left: 4px; */
     font-size: 12px;
+}
+
+div.code-toolbar>.toolbar>.toolbar-item>span {
+    display: none;
 }
 
 div.code-toolbar>.toolbar>.toolbar-item>a:hover,
@@ -181,5 +183,3 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
     color: inherit;
     text-decoration: none
 }
-
-.copy-to-clipboard-button {}
